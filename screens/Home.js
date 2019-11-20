@@ -12,7 +12,7 @@ import {
 
 import { MonoText } from '../components/StyledText';
 
-export default function HomeScreen() {
+export default function Home() {
   return (
     <View style={styles.container}>
       <ScrollView
@@ -36,7 +36,7 @@ export default function HomeScreen() {
 
           <View
             style={[styles.codeHighlightContainer, styles.homeScreenFilename]}>
-            <MonoText>screens/HomeScreen.js</MonoText>
+            <MonoText>screens/Home.js</MonoText>
           </View>
 
           <Text style={styles.getStartedText}>
@@ -69,7 +69,7 @@ export default function HomeScreen() {
   );
 }
 
-HomeScreen.navigationOptions = {
+Home.navigationOptions = {
   header: null,
 };
 

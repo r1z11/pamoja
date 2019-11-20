@@ -2,7 +2,7 @@ import React from 'react';
 import { ScrollView, StyleSheet } from 'react-native';
 import { ExpoLinksView } from '@expo/samples';
 
-export default function TransactionsScreen() {
+export default function Accounts() {
   return (
     <ScrollView style={styles.container}>
       {/**
@@ -14,8 +14,8 @@ export default function TransactionsScreen() {
   );
 }
 
-TransactionsScreen.navigationOptions = {
-  title: 'Transactions',
+Accounts.navigationOptions = {
+  title: 'Accounts',
 };
 
 const styles = StyleSheet.create({

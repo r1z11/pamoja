@@ -46,15 +46,19 @@ export default class AuthScreen extends React.Component {
     };
   }
 
+  componentDidMount() {
+    // console.log(this.props);
+  }
+
   // Navigate to home screen
   _signIn = () => {
-    if (this.validate)
+    // if (this.validate)
       this.props.navigation.navigate("Main");
   }
   // Navigate to home screen
   _register = () => {
-    if (this.validate && this.state.termsChecked)
-      this.props.navigation.navigate("Main");
+    // if (this.validate && this.state.termsChecked)
+      this.props.navigation.navigate("Verify");
   }
 
   // Navigate to forgot password screen

@@ -3,10 +3,10 @@ import { Platform } from 'react-native';
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
 
 import TabBarIcon from '../components/TabBarIcon';
-import HomeScreen from '../screens/HomeScreen';
-import LinksScreen from '../screens/LinksScreen';
-import TransactionsScreen from '../screens/TransactionsScreen';
-import SettingsScreen from '../screens/SettingsScreen';
+import Home from '../screens/Home';
+import Accounts from '../screens/Accounts';
+import Transactions from '../screens/Transactions';
+import More from '../screens/More';
 
 const config = Platform.select({
   web: { headerMode: 'screen' },
@@ -16,7 +16,7 @@ const config = Platform.select({
 // Home
 const HomeStack = createStackNavigator(
   {
-    Home: HomeScreen,
+    Home: Home,
   },
   config
 );
@@ -32,26 +32,26 @@ HomeStack.navigationOptions = {
 HomeStack.path = '';
 
 // Accounts
-const LinksStack = createStackNavigator(
+const AccountsStack = createStackNavigator(
   {
-    Links: LinksScreen,
+    Acccounts: Accounts,
   },
   config
 );
 
-LinksStack.navigationOptions = {
+AccountsStack.navigationOptions = {
   tabBarLabel: 'Accounts',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-card' : 'md-card'} />
   ),
 };
 
-LinksStack.path = '';
+AccountsStack.path = '';
 
 // Transactions
 const TransactionsStack = createStackNavigator(
   {
-    Transactions: TransactionsScreen,
+    Transactions: Transactions,
   },
   config
 );
@@ -59,34 +59,34 @@ const TransactionsStack = createStackNavigator(
 TransactionsStack.navigationOptions = {
   tabBarLabel: 'Transactions',
   tabBarIcon: ({ focused }) => (
-    <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-rewind' : 'md-rewind'} />
+    <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-refresh' : 'md-refresh'} />
   ),
 };
 
 TransactionsStack.path = '';
 
 // More
-const SettingsStack = createStackNavigator(
+const MoreStack = createStackNavigator(
   {
-    Settings: SettingsScreen,
+    More: More,
   },
   config
 );
 
-SettingsStack.navigationOptions = {
+MoreStack.navigationOptions = {
   tabBarLabel: 'More',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon focused={focused} name={Platform.OS === 'ios' ? 'ios-more' : 'md-more'} />
   ),
 };
 
-SettingsStack.path = '';
+MoreStack.path = '';
 
 const tabNavigator = createBottomTabNavigator({
   HomeStack,
-  LinksStack,
-  TransactionsScreen,
-  SettingsStack,
+  AccountsStack,
+  TransactionsStack,
+  MoreStack,
 });
 
 tabNavigator.path = '';
