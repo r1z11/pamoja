@@ -13,6 +13,20 @@ const config = Platform.select({
   default: {},
 });
 
+// Tab Bar Options
+const tabBarOptions = {
+  activeTintColor: '#3C4AB7',
+  labelStyle: {
+    fontSize: 12
+  },
+  tabStyle: {
+  },
+  style: {
+    height: 60,
+    padding: 5
+  },
+}
+
 // Home
 const HomeStack = createStackNavigator(
   {
@@ -87,7 +101,9 @@ const tabNavigator = createBottomTabNavigator({
   AccountsStack,
   TransactionsStack,
   MoreStack,
-});
+}, {
+    tabBarOptions: tabBarOptions
+  });
 
 tabNavigator.path = '';
 
