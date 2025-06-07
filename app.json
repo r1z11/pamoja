@@ -2,7 +2,6 @@
   "expo": {
     "name": "Pamoja",
     "slug": "pamoja",
-    "privacy": "public",
     "platforms": [
       "ios",
       "android",
