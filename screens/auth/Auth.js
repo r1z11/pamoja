@@ -47,6 +47,7 @@ export default class AuthScreen extends React.Component {
 
   componentDidMount() {
     // console.log(this.props);
+    console.log("Auth component mounted");
   }
 
   // Navigate to home screen

@@ -38,7 +38,7 @@
           "android": {
             "fonts": [
               {
-                "fontFamily": "SpaceMono Regular",
+                "fontFamily": "space-mono",
                 "fontDefinitions": [
                   {
                     "path": "./assets/fonts/SpaceMono-Regular.ttf",
