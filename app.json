@@ -27,6 +27,39 @@
     "android": {
       "package": "com.pamoja.app"
     },
-    "description": "Pamoja Wallet"
+    "description": "Pamoja Wallet",
+    "plugins": [
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/SpaceMono-Regular.ttf"
+          ],
+          "android": {
+            "fonts": [
+              {
+                "fontFamily": "SpaceMono Regular",
+                "fontDefinitions": [
+                  {
+                    "path": "./assets/fonts/SpaceMono-Regular.ttf",
+                    "weight": "normal"
+                  }
+                ]
+              }
+            ]
+          },
+          "ios": {
+            "fonts": [
+              "./assets/fonts/SpaceMono-Regular.ttf"
+            ]
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "c9ccf879-6836-4c6d-b355-4d53cefbf524"
+      }
+    }
   }
 }

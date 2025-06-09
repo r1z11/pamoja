@@ -1,4 +1,4 @@
-import * as WebBrowser from 'expo-web-browser';
+// import * as WebBrowser from 'expo-web-browser';
 import React from 'react';
 import {
   Image,
@@ -245,7 +245,7 @@ const styles = StyleSheet.create({
   },
   balance: {
     fontSize: 27,
-    fontWeight: "bold",
+    // fontWeight: "bold",
     color: "#555",
     marginLeft: 5
   },
@@ -401,7 +401,7 @@ const styles = StyleSheet.create({
   bHalfHeaderLeft: {
     flex: .5,
     fontSize: 17,
-    fontWeight: "bold",
+    // fontWeight: "bold",
     color: "#555",
     marginRight: 20
   },
@@ -452,7 +452,7 @@ const styles = StyleSheet.create({
   txnsHeaderLeft: {
     flex: .5,
     fontSize: 17,
-    fontWeight: "bold",
+    // fontWeight: "bold",
     color: "#555"
   },
   txnsHeaderRight: {

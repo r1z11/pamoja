@@ -10,7 +10,6 @@ import {
   ScrollView,
   TouchableWithoutFeedback
 } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
 import KeyboardSpacer from 'react-native-keyboard-spacer';
 import { Ionicons } from '@expo/vector-icons';
 import CheckBox from 'react-native-check-box';

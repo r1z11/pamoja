@@ -6,9 +6,7 @@ import {
     View,
     TextInput,
     ScrollView,
-    TouchableWithoutFeedback
 } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
 import KeyboardSpacer from 'react-native-keyboard-spacer';
 import { isNumeric } from '../../helpers/Validation';
 
@@ -111,7 +109,7 @@ const styles = StyleSheet.create({
         flex: .5,
         color: "#AAA",
         fontSize: 25,
-        fontWeight: "bold",
+        // fontWeight: "bold",
         textAlign: "center",
         marginTop: 150,
         marginBottom: 20
